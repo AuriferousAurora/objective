@@ -1,0 +1,21 @@
+div.task__info > input.task__title {
+  background-color: var(--color-main);
+  color: var(--color-back);
+  font-family: var(--font-main);
+  font-size: 1.17em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0.3em 0.3em;
+  text-align: center;
+  width: 100%;
+}
+
+div.task__info > h5 > input{
+  background-color: var(--color-back);
+  color: var(--color-main);
+  border-bottom: 1px solid var(--color-main);
+  margin: 0;
+  padding: 0.3em 0.3em;
+  width: 3em;
+}
+

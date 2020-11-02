@@ -1,21 +1,52 @@
 div.task {
   color: var(--color-main);
   border: 2px solid var(--color-main);
+  display: flex;
+  flex-direction: column;
   font-family: var(--font-main);
-  height: 400px;
+  height: 250px;
+  justify-content: space-between;
   padding: 1em;
   width: 300px;
 }
 
-div.task > h3.task__title {
+div.task__info > h3.task__title {
   background-color: var(--color-main);
   color: var(--color-back);
   margin: 0;
   padding: 0.3em 0.3em;
 }
 
-div.task > h5 {
+div.task__info > h5 {
   color: var(--color-main);
-  margin: 0.5em 0;
+  margin: 0.5em 0.3em;
 }
+
+div.task__buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+div.task__buttons > button.button {
+  border: 2px solid var(--color-main);
+  font-size: 1em;
+  height: 2em;
+  width: 5em;
+}
+
+div.task__buttons > button {
+  background-color: var(--color-back);
+  color: var(--color-main);
+}
+
+div.task__buttons > button.button--active {
+  background-color: var(--color-main);
+  color: var(--color-back);
+}
+
+div.task__buttons > button.button--inactive {
+  background-color: var(--color-back);
+  color: var(--color-main);
+}
+
 

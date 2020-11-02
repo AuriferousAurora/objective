@@ -6,3 +6,12 @@ main {
   grid-row: 2 / 3;
   padding: 1em 1em;
 }
+
+main > button.button {
+  border: 2px solid var(--color-main);
+  background-color: var(--color-back);
+  color: var(--color-main);
+  font-size: 1em;
+  height: 2em;
+  width: 8em;
+}
