@@ -1,7 +1,12 @@
 import React, { useEffect, useState }  from 'react';
 import './Task.css';
 
-function Task() {
+interface task {
+  name: String;
+  allotted_time: Number;
+}
+
+const Task = (task: task) => {
   const [time, setTime] = useState(0);
   const [isActive, setIsActive] = useState(false);
 
@@ -26,8 +31,8 @@ function Task() {
   return (
     <div className='task'>
       <div className='task__info'>
-        <h3 className='task__title'>Task: Programming</h3>
-        <h5 className='task__time-alotted'>Time Allotted: 1.5 hours</h5>
+        <h3 className='task__title'>Task: {task.name}</h3>
+        <h5 className='task__time-alotted'>Time Allotted: {task.allotted_time} hours</h5>
         <h5 className='task__time-spent'>Time Spent: {transformTime(time)}</h5>
       </div>
       <div className='task__buttons'>
