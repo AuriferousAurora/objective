@@ -1,0 +1,21 @@
+div.task {
+  color: var(--color-main);
+  border: 2px solid var(--color-main);
+  font-family: var(--font-main);
+  height: 400px;
+  padding: 1em;
+  width: 300px;
+}
+
+div.task > h3.task__title {
+  background-color: var(--color-main);
+  color: var(--color-back);
+  margin: 0;
+  padding: 0.3em 0.3em;
+}
+
+div.task > h5 {
+  color: var(--color-main);
+  margin: 0.5em 0;
+}
+

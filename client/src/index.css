@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/poppins/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "M-1m";
+  src: url("fonts/M-1m/mplus-1m-regular.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+  border: none;
+}
+
+:root {
+  --color-back: rgb(0, 0 , 0);
+  --color-main: rgb(243, 54, 61);
+
+  --font-main: "M-1m", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  display: grid;
+  /* min-content worked as the second value in grid-template-rows in soundtracker, but failed here */
+  grid-template-rows: 4em calc(100% - 4em);
+  grid-template-columns: 1fr 4fr;
+  height: 100vh;
+  width: 100vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

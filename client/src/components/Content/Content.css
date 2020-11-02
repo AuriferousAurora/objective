@@ -1,0 +1,8 @@
+main {
+  background-color: var(--color-back);
+  display: flex;
+  gap: 1em;
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  padding: 1em 1em;
+}
